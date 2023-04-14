@@ -34,7 +34,7 @@ public class PostController {
      * 获取所有列表信息
      * @return
      */
-    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    @getMapping("/list")
     private Map<String,Object> listPost() {
         Map<String,Object> map = new HashMap<String, Object>();
         List<Post> list = new ArrayList<Post>();
